@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none;
+	color: whitesmoke;
+	font-family: "Andika New Basic", sans-serif;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background: url(./bg\(1\).jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+form {
+	width: 20rem;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	padding: 0.4rem 0.9rem;
+	border-radius: 0.5rem;
+	font-size: 1.3rem;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+input {
+	font-size: 1.2rem;
+	margin-left: 10px;
+	outline: none;
+	border: none;
+	background: rgba(255, 255, 255, 0);
+}
+
+button {
+	font-size: 1.4rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-left: 2.9rem;
+	background: rgba(255, 255, 255, 0);
+}
+
+::placeholder {
+	color: whitesmoke;
+}
+
+.weather-info {
+	position: absolute;
+	top: 33%;
+	left: 10%;
+}
+
+.weather-info p,
+h1 {
+	font-size: 1.7rem;
+	margin-bottom: 0px;
+}
+
+.details {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	bottom: 12rem;
+	left: 14rem;
+	border-left: solid 2px whitesmoke;
+	padding-left: 1.5rem;
+}
+
+.details p {
+	font-size: 1.2em;
+	padding: 0.2em;
+}
+
+.temp {
+	position: relative;
+	bottom: 2rem;
+	font-size: 8rem;
+}
+
+.temp span {
+	font-size: 2.3rem;
+	position: relative;
+	bottom: 5rem;
+	right: 2rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+.error {
+	position: relative;
+	top: 6rem;
+	left: 13.4rem;
+	color: red;
+}
+
+.fade-in {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-out {
+	animation: fadeout 2s;
+}
+
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

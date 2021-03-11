@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <form class="fade-in">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input id="city" type="text" autocomplete="off" maxlength="20" placeholder="Search city" size="15">
+            <button title="GPS" type="button">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </button>
+        </form>
+        <div class="error fade-in" style="display: none;">Oops! No matching city found</div>
+        <div class="weather-info info">
+                <p id="view">
+                    Mostly Cloudy
+                </p>
+                <h1 id="city">
+                    Chandigarh, India
+                </h1>
+                <span class="temp">
+                    69 <span>&#8451</span>
+                </span>
+        
+        <div class="details info">
+            <p id="feels_like">Feels like: 20 <span>&#8451</span></p>
+            <p id="wind">Wind: 2 kph</p>
+            <p id="humidity">Humidity: 40%</p>
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
